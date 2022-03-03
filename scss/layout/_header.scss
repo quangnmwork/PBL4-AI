@@ -1,0 +1,24 @@
+.header {
+  height: fit-content;
+  position: relative;
+  padding: 1rem 5rem;
+  background-color: $color-white;
+  box-shadow: 0 1rem 1rem rgba($color-black, 0.4);
+  &__nav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+  }
+  &__icon {
+    display: inline-block;
+    cursor: pointer;
+    color: $color-orange-medium;
+    font-size: 1.4rem;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

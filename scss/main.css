@@ -1,0 +1,227 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 80%;
+}
+
+body {
+  background-color: #a9b1b9;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-very-small {
+  margin-bottom: 0.3rem;
+}
+
+.u-margin-right-big {
+  margin-right: 3rem;
+}
+
+.heading-primary {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f7865a), to(#e04d18));
+  background-image: linear-gradient(to right, #f7865a, #e04d18);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+}
+
+.heading-tertiary {
+  color: #f7865a;
+  font-size: 2rem;
+}
+
+.feature-box {
+  background-color: #fff;
+  padding: 2rem 2rem;
+  border-radius: 8px;
+  border: 3px solid #f15517;
+  -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+}
+
+.feature-box__list {
+  list-style-type: none;
+}
+
+.feature-box__item {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #f15517;
+  margin-bottom: 2rem;
+}
+
+.feature-box3 {
+  background-image: url("/image/lock.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50% 80%;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.feature-box3:hover {
+  cursor: not-allowed;
+}
+
+.toggle {
+  font-size: .6rem;
+  width: 3rem;
+  float: right;
+  -webkit-transform: translateY(0.8rem);
+          transform: translateY(0.8rem);
+}
+
+.header {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  padding: 1rem 5rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 5%;
+}
+
+.header__icon {
+  display: inline-block;
+  cursor: pointer;
+  color: #f15517;
+  font-size: 1.4rem;
+}
+
+.header__icon:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 6rem)/2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+.footer {
+  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0.5, #f7865a), color-stop(0.4, #f15517));
+  background-image: linear-gradient(to left bottom, #f7865a 0.5, #f15517 0.4);
+  height: 6rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer__item {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__item--click {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 45%;
+  margin-right: 2rem;
+}
+
+.footer__item--hand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 60%;
+}
+
+.footer__icon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.footer__text {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__icon:hover + .footer__text {
+  opacity: 0.5;
+}
+
+.main {
+  background-color: #a9b1b9;
+  width: 100%;
+}
+
+.section-house {
+  margin-top: 5rem;
+}
+
+.section-light {
+  margin: 0 auto;
+  padding: 10rem 5rem;
+}
+/*# sourceMappingURL=main.css.map */

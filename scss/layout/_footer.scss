@@ -1,0 +1,38 @@
+.footer{
+    background-image: linear-gradient(to left bottom,$color-orange-light .5,$color-orange-medium .4);
+    height: 6rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    &__item{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &--click{
+            @include absCenter;
+            left: 45%;
+            margin-right: 2rem;
+        }
+        &--hand {
+            @include absCenter ; 
+            left: 60%;
+        }
+    }
+    &__icon {
+        cursor: pointer;
+        color: $color-white;
+        font-size: 3.5rem;
+    }
+    &__text {
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+        color: $color-white;
+        text-align: center;
+    }
+    &__icon:hover + &__text {
+        opacity: 0.5;
+    }
+}

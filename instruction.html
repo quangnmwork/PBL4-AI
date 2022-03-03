@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="image/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <title>Instruction</title>
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="instruction.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="handmode.html" class="heading-primary">Smart house</a>
+      <div class="header__nav">
+        <div class="header__icon">
+          <div class="header__avatar">
+            <img src="" alt="avatar">
+            <p>Nguyen Minh Quang</p>
+          </div>
+        </div>
+        <div class="header__icon">
+          <span id="btn__nofications" class="fas fa-bell header-icon"></span>
+        </div>
+        <div class="header__icon">
+          <span class="fas fa-book-reader local-library header-icon"></span>
+        </div>
+        <div class="header__icon header-logout">
+          <span class="fas fa-sign-out-alt header-icon"></span>
+        </div>
+      </div>
+    </header>
+    <div class="guide">
+      <nav class="guide__nav">
+        <ul>
+          <li class="guide__item"><a class="nav__link" href="#welcome">Welcome</a></li>
+          <li class="guide__item"><a class="nav__link" href="#one">Light Left</a></li>
+          <li class="guide__item"><a class="nav__link" href="#two">Light Right</a></li>
+          <li class="guide__item"><a class="nav__link" href="#fan">Fan</a></li>
+          <li class="guide__item"><a class="nav__link" href="#light">Light</a></li>
+          <li class="guide__item"><a class="nav__link" href="#on">On</a></li>
+          <li class="guide__item"><a class="nav__link" href="#off">Off</a></li>
+          <li class="guide__item"><a class="nav__link" href="#continue">Continue</a></li>
+          <li class="guide__item"><a class="nav__link" href="#stop">Stop</a></li>
+          <li class="guide__item"><a class="nav__link" href="#clickmode">ClickMode</a></li>
+          <li class="guide__item"><a class="nav__link" href="#how">How to use</a></li>
+        </ul>
+      </nav>
+      <div class="guide__content">
+        <div class="guide__welcome" id="welcome">
+          <h1 class="guide__heading">Welcome to Smart House</h1>
+          <p class="guide__des">
+            This is a guide for customers. Please see instructions below. I hope you will ask . If there is any problem
+            please contact us
+          </p>
+        </div>
+        <div class="guide__gesture" id="one">
+          <div class="guide__img">
+            <img src="image/one.jpg" alt="one" />
+          </div>
+          <div class="guide__use">
+            This is gesture number 1 . If you want to choose the left light device on the 2nd floor. Please do gesture
+            number 1
+          </div>
+        </div>
+        <div class="guide__gesture" id="two">
+          <div class="guide__img">
+            <img src="image/two.jpg" alt="one" />
+          </div>
+          <div class="guide__use">
+            This is gesture number 2 . If you want to choose the right light device on the 2nd floor. Please do gesture
+            number 2
+          </div>
+        </div>
+        <div class="guide__gesture" id="fan">
+          <div class="guide__img">
+            <img src="image/fan.jpg" alt="one" />
+          </div>
+          <div class="guide__use">
+            This is gesture fan . If you want to choose the fan device on the 1st floor. Please do gesture fan
+          </div>
+        </div>
+        <div class="guide__gesture" id="light">
+          <div class="guide__img">
+            <img src="image/light.jpg" alt="one" />
+          </div>
+          <div class="guide__use">
+            This is gesture light. If you want to choose the light device on the 1st floor. Please do gesture light
+          </div>
+        </div>
+        <div class="guide__gesture" id="on">
+          <div class="guide__img">
+            <img src="image/on.jpg" alt="one" />
+          </div>
+          <div class="guide__use">This is gesture on . If you want to turn on device. Please do gesture on</div>
+        </div>
+        <div class="guide__gesture" id="off">
+          <div class="guide__img">
+            <img src="image/off.jpg" alt="one" />
+          </div>
+          <div class="guide__use">This is gesture off . If you want to turn off device. Please do gesture off</div>
+        </div>
+        <div class="guide__gesture" id="continue">
+          <div class="guide__img">
+            <img src="image/continue.jpg" alt="one" />
+          </div>
+          <div class="guide__use">
+            This is gesture continue . If you want to continue system. Please do gesture continue
+          </div>
+        </div>
+        <div class="guide__gesture" id="stop">
+          <div class="guide__img">
+            <img src="image/stop.jpg" alt="one" />
+          </div>
+          <div class="guide__use">This is gesture stop. If you want to stop system. Please do gesture stop</div>
+        </div>
+
+        <div class="guide__gesture" id="clickmode">
+          <div class="guide__img">
+            <img src="image/clickmode.jpg" alt="one" />
+          </div>
+          <div class="guide__use">
+            This is gesture clickmode . If you want to direct to ClickMode page. Please do gesture ClickMode
+          </div>
+        </div>
+
+        <div id="how">
+          <div class="guide__gesture-heading">How to use</div>
+          <div class="guide__gesture-how">
+            <div class="guide__ui">
+              <img src="image/ui-1.png" alt="ui"  />
+            </div>
+            <div class="guide__use">
+             <span class="guide-left">This</span> is our UI when in HandMode. The orange box is the place to define your hand gestures. If you want to
+              interact with the device please put your hand in the orange box. The yellow box is used to monitor the
+              status of the devices in the house.
+            </div>
+          </div>
+          <div class="guide__gesture-how">
+            <div class="guide__ui">
+              <img src="image/ui-2.png" alt="ui"  />
+            </div>
+            <div class="guide__use guide-left">
+              <span class="guide-left">First</span> you have to choose any device first. After the device is recognized by the system, the device's text
+              will be illuminated as shown in the picture
+            </div>
+          </div>
+          <div class="guide__gesture-how">
+            <div class="guide__ui">
+              <img src="image/ui-3.png" alt="ui"  />
+            </div>
+            <div class="guide__use guide-left">
+              <span class="guide-left">Right</span> after that, you have to put the gesture On or Off. The device you previously selected will be turned
+              on or off and the toggle button moves to see if you've turned it on or off.
+            </div>
+          </div>
+          <div class="guide__gesture-how">
+            <div class="guide__ui">
+              <img src="image/ui-4.png " alt="ui" />
+            </div>
+            <div class="guide__use guide-left">
+              <span class="guide-left">If</span> you want to stop the system . You just need to give the Off gesture only. The system will then stop
+              processing until you want it to continue.
+            </div>
+          </div>
+          <div class="guide__gesture-how">
+            <div class="guide__ui">
+              <img src="image/ui-5.png" alt="ui"  />
+            </div>
+            <div class="guide__use guide-left">
+              <span class="guide-left">If</span> you want the system to continue , please do the continue gesture . You can then continue to interact
+              with the system.
+            </div>
+          </div>
+          <div class="guide__gesture-how">
+            <div class="guide__ui">
+              <img src="image/ui-6.png" alt="ui" />
+            </div>
+            <div class="guide__use guide-left">
+              <span class="guide-left">If</span> you want to go to the clickmode page. Please do ClickMode Gesture.Then, You can then do On(Like) or
+              Off(Dislike) gestures to be able to make your decision. If you give device gesture, please return
+              clickmode for further interaction.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="close">&times;</div>
+        <!-- <div class="filter-content">
+          <div class="filter-item"><span class="filter-text">All</span></div>
+          <div class="filter-item"><span class="filter-text">Minh</span></div>
+          <div class="filter-item"><span class="filter-text">Quang</span></div>
+          <div class="filter-item"><span class="filter-text">Tien</span></div>
+          <div class="filter-item"><span class="filter-text">Thinh</span></div>
+        </div> -->
+        <div class="select select-container">
+          <select class="select-box">
+            <!-- <option value="1">All</option>
+            <option value="3">Tien</option>
+            <option value="2">Minh</option>
+            <option value="3">Quang</option> -->
+          </select>
+        </div>
+        <div class="content-line"></div>
+        <div class="content-list"></div>
+      </div>
+    </div>
+  </body>
+</html>

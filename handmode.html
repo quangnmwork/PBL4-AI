@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=., initial-scale=1.0" />
+    <title>Document</title>
+    <!--font awnsome-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css" />
+    <!-- mediapipe -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <!--end mediapipe -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="image/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <script defer language="javascript" type="module" src="handmode.js"></script>
+
+    <!-- <script defer language="javascript" type="text/javascript" src="sketch.js"></script> -->
+  </head>
+  <body>
+    <header class="header">
+      <a href="handmode.html" class="heading-primary">Smart house</a>
+      <div class="header__nav">
+        <div class="header__icon">
+          <div class="header__avatar">
+            <img src="" alt="avatar">
+            <p>Nguyen Minh Quang</p>
+          </div>
+        </div>
+        <div class="header__icon">
+          <span id="btn__nofications" class="fas fa-bell header-icon"></span>
+        </div>
+        <div class="header__icon">
+          <span class="fas fa-book-reader local-library header-icon"></span>
+        </div>
+        <div class="header__icon header-logout">
+          <span class="fas fa-sign-out-alt header-icon"></span>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="box_flex">
+        <div class="videoBox">
+          <video id="video" playsinline autoplay muted></video>
+          <div class="videoBox__capture">
+            <h2 class="videoBox__notify">Put hand into box</h2>
+            <h2 class="videoBox__notify-continue"></h2>
+          </div>
+         
+        </div>
+        <div class="stateBox">
+          <div class="state">
+            <h3 class="stateHeading">Floor 1</h3>
+            <div class="stateList">
+              <div class="stateItem">
+                <p class="toggleFan11">Fan</p>
+                <div class="mt-android-orange toggle handmode">
+                  <input id="fan-11" type="checkbox" />
+                  <label for="fan-11"></label>
+                </div>
+              </div>
+              <div class="stateItem">
+                <p class="toggleLight11">Light</p>
+                <div class="mt-android-orange toggle handmode">
+                  <input id="light-11" type="checkbox" class="handmode" />
+                  <label for="light-11" class="handmode"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="state">
+            <h3 class="stateHeading">Floor 2</h3>
+            <div class="stateList">
+              <div class="stateItem">
+                <p class="toggleLight21">Light Left</p>
+                <div class="mt-android-orange toggle handmode">
+                  <input id="light-21" type="checkbox" />
+                  <label for="light-21"></label>
+                </div>
+              </div>
+              <div class="stateItem">
+                <p class="toggleLight22">Light Right</p>
+                <div class="mt-android-orange toggle handmode">
+                  <input id="light-22" type="checkbox" />
+                  <label for="light-22"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="state">
+          <p class="stateGesture"><span>Your Action:</span><span class="stateGesture__detail"> none</span></p>
+          <p class="stateGesture">
+            <span>Your Device:</span><span class="stateGesture__detail stateGesture__device"> none</span>
+          </p>
+        </div> -->
+          <div class="quitBox">
+            <h1 class="quitBox__heading">Smart House Alert</h1>
+            <p class="quitBox__des">Do you want direct to ClickMode Page?</p>
+            <div class="quitBox__btn">
+              <button class="quitBox__confirm"><span class="material-icons">thumb_up</span></button>
+              <button class="quitBox__cancel"><span class="material-icons">thumb_down</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="stateSleep">System sleeping,Continue gesture to resume</div>
+      </div>
+    </main>
+    <canvas class="myCanvas" width="400" height="400" style="border: 1px solid #000000"></canvas>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="close">&times;</div>
+        <!-- <div class="filter-content">
+          <div class="filter-item"><span class="filter-text">All</span></div>
+          <div class="filter-item"><span class="filter-text">Minh</span></div>
+          <div class="filter-item"><span class="filter-text">Quang</span></div>
+          <div class="filter-item"><span class="filter-text">Tien</span></div>
+          <div class="filter-item"><span class="filter-text">Thinh</span></div>
+        </div> -->
+        <div class="select select-container">
+          <select class="select-box">
+            <!-- <option value="1">All</option>
+            <option value="3">Tien</option>
+            <option value="2">Minh</option>
+            <option value="3">Quang</option> -->
+          </select>
+        </div>
+        <div class="content-line"></div>
+        <div class="content-list"></div>
+      </div>
+    </div>
+    <!-- <a id="download" download="image.jpg"><button type="button" onClick="download()">Download</button></a> -->
+    <div class="modal-overlay"></div>
+  </body>
+</html>

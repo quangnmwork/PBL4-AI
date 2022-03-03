@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="image/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1 class='create-account'>Create Account</h1>
+          <input class="name-resign" type="text" placeholder="Name" />
+          <input class="email-resign" type="text" placeholder="Email" />
+          <input class="pass-resign" type="password" placeholder="Password" />
+          <input id='files' type="file" class="upload-img" accept="image/*" placeholder = 'Select an image'></input>
+          <div class="image-group">
+            <div class="image-border">
+              <img src="image/user.jpg" alt="image" class="image-resign">
+            </div>
+            <div class="loading-animation-group"></div>
+            <label for="files" class="custom-file-upload">
+              <i class="fas fa-images"></i>
+              <span>Choose an Image</span>
+            </label>
+          </div>
+          <p class="image-loading"></p>  
+          <p class="signup-message signup-message-resign">heeh</p>      
+          <button class="resign">Sign Up</button>  
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1 class="sign-in__heading">Sign in</h1>
+          <input class="email-login" type="text" placeholder="Email" />
+          <input class="pass-login" type="password" placeholder="Password" />
+          <p class="signup-message signup-message-login">hello</p>
+          <button class="login">Sign In</button>
+          
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Smart House</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Smart House</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="module" src="Login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JNKKKK/MoreToggles.css@0.2.1/output/moretoggles.min.css" />
+    <link rel="stylesheet" href="image/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Smart house</title>
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer type="module" src="clickmode.js"></script>
+  <body>
+    <header class="header">
+      <a href="clickmode.html" class="heading-primary">Smart house</a>
+      <div class="header__nav">
+        <div class="header__icon">
+          <div class="header__avatar">
+            <img src="" alt="avatar">
+            <p>Nguyen Minh Quang</p>
+          </div>
+        </div>
+        <div class="header__icon">
+          <p id="btn__nofications" class="fas fa-bell header-icon"></p>
+        </div>
+        <!-- <div class="header__icon">
+          <span class="fas fa-book-reader local-library header-icon"></span>
+        </div> -->
+        <div class="header__icon header-logout">
+          <span class="fas fa-sign-out-alt header-icon"></span>
+        </div>
+      </div>
+    </header>
+    <!-- <button onclick="appendText()">Append text</button> -->
+    <main class="main">
+      <!-- <section class="section-house">
+            <div class="row">
+                <div class="col-1-of-2">
+                    <img class="house__img" src="image/house.jpg" alt = "The house">
+                </div>
+                <div class="col-1-of-2"></div>
+            </div>
+        </section> -->
+      <section class="section-light">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <h3 class="heading-tertiary u-margin-bottom-small">Floor 1</h3>
+              <ul class="feature-box__list">
+                <li class="feature-box__item">
+                  <span class="feature-box__text">Light</span>
+                  <div class="mt-android-orange toggle">
+                    <input type="checkbox" class="check1" id="light_1" name="signup_submit" />
+                    <label for="light_1"></label>
+                  </div>
+                </li>
+                <li class="feature-box__item">
+                  <span class="feature-box__text">Fan</span>
+                  <div class="mt-android-orange toggle">
+                    <input type="checkbox" class="check0" id="fan" />
+                    <label for="fan"></label>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-group">
+                <button class="btn-floor-1-on all-1-on">Turn on all</button>
+                <button class="btn-floor-1-off all-1-off">Turn off all</button>
+              </div>
+            </div>
+            <!-- <div class="toggle">
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div> -->
+          </div>
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <h3 class="heading-tertiary u-margin-bottom-small">Floor 2</h3>
+              <ul class="feature-box__list">
+                <li class="feature-box__item">
+                  <span class="feature-box__text">Light left</span>
+                  <div class="mt-android-orange toggle">
+                    <input type="checkbox" class="check2" id="light_2_Left" />
+                    <label for="light_2_Left"></label>
+                  </div>
+                </li>
+                <li class="feature-box__item">
+                  <span class="feature-box__text">Light right</span>
+                  <div class="mt-android-orange toggle">
+                    <input type="checkbox" class="check3" id="light_2_Right" />
+                    <label for="light_2_Right"></label>
+                  </div>
+                </li>
+                <div class="btn-group">
+                  <button class="btn-floor-2-on all-2-on">Turn on all</button>
+                  <button class="btn-floor-2-off all-2-off">Turn off all</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="feature-box feature-box3">
+              <h3 class="heading-tertiary u-margin-bottom-small">Floor 3</h3>
+              <ul class="feature-box__list">
+                <li class="feature-box__item">
+                  <span class="feature-box__text not-allow">Light</span>
+                  <div class="mt-android-orange toggle">
+                    <input id="7" type="checkbox" disabled="true" />
+                    <label for="7"></label>
+                  </div>
+                </li>
+                <li class="feature-box__item">
+                  <span class="feature-box__text not-allow">Fan</span>
+                  <div class="mt-android-orange toggle">
+                    <input id="8" type="checkbox" disabled="true" />
+                    <label for="8"></label>
+                  </div>
+                </li>
+                <div class="btn-group-disabled">
+                  <button class="not-allow">Turn on all</button>
+                  <button class="not-allow">Turn off all</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__item--click">
+          <span class="material-icons footer__icon touch_app">touch_app</span>
+          <a class="footer__text">Click mode</a>
+        </div>
+        <div class="footer__item--hand">
+          <span class="material-icons footer__icon pan_tool">pan_tool</span>
+          <a href="handmode.html" class="footer__text">Hand mode</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Trigger/Open The Modal -->
+
+    <!-- The Modal for notification span -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="close">&times;</div>
+        <!-- <div class="filter-content">
+          <div class="filter-item"><span class="filter-text">All</span></div>
+          <div class="filter-item"><span class="filter-text">Minh</span></div>
+          <div class="filter-item"><span class="filter-text">Quang</span></div>
+          <div class="filter-item"><span class="filter-text">Tien</span></div>
+          <div class="filter-item"><span class="filter-text">Thinh</span></div>
+        </div> -->
+        <div class="select select-container">
+          <select class="select-box">
+            <!-- <option value="1">All</option>
+            <option value="3">Tien</option>
+            <option value="2">Minh</option>
+            <option value="3">Quang</option> -->
+          </select>
+        </div>
+        <div class="content-line"></div>
+        <div class="content-list"></div>
+      </div>
+    </div>
+  </body>
+</html>
